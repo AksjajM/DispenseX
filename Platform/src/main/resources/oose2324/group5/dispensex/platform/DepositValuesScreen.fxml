@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oose2324.group5.dispensex.platform.controllers.DepositValuesController">
+    <Text layoutX="247.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deponeer tijden overzicht">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Button fx:id="goToIntervalScreenButton" layoutX="15.0" layoutY="350.0" mnemonicParsing="false" onAction="#goToIntervalScreen" text="Verander tijden -&gt;" />
+    <TableView fx:id="tableView" layoutY="49.0" prefHeight="291.0" prefWidth="700.0">
+        <columns>
+            <TableColumn fx:id="idColumn" editable="false" prefWidth="65.5" text="Id" />
+         <TableColumn fx:id="dayColumn" prefWidth="116.0" text="Dag" />
+         <TableColumn fx:id="medicineNameColumn" prefWidth="124.5" text="Medcijn" />
+         <TableColumn fx:id="amountColumn" prefWidth="43.0" text="Aantal" />
+         <TableColumn fx:id="timeOfDisposalColumn" prefWidth="175.0" text="Tijd uitgave" />
+            <TableColumn fx:id="timeOfTakeoutColumn" editable="false" prefWidth="175.0" text="Tijd verwijderd" />
+        </columns>
+    </TableView>
+    <Button fx:id="closeButton" layoutX="400.0" layoutY="350.0" mnemonicParsing="false" onAction="#closeScreen" text="Sluiten" />
+    <Button fx:id="refreshOverview" layoutX="240.0" layoutY="350.0" mnemonicParsing="false" onAction="#refreshListView" text="Verversen" />
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oose2324.group5.dispensex.platform.controllers.ChangeIntervalController">
+    <Text layoutX="110.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tijd van uitgave:">
+        <font>
+            <Font size="11.0" />
+        </font>
+    </Text>
+    <Text layoutX="40.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakje 1" />
+    <TextField fx:id="timeOfDisposalTextFieldBin1" layoutX="110.0" layoutY="90.0" prefHeight="26.0" prefWidth="91.0" promptText="Voer tijd in" />
+    <Text layoutX="40.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakje 2" />
+    <TextField fx:id="timeOfDisposalTextFieldBin2" layoutX="110.0" layoutY="150.0" prefHeight="26.0" prefWidth="91.0" promptText="Voer tijd in" />
+    <Text layoutX="40.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakje 3" />
+    <TextField fx:id="timeOfDisposalTextFieldBin3" layoutX="110.0" layoutY="210.0" prefHeight="26.0" prefWidth="91.0" promptText="Voer tijd in" />
+    <Text layoutX="40.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakje 4" />
+    <TextField fx:id="timeOfDisposalTextFieldBin4" layoutX="110.0" layoutY="270.0" prefHeight="26.0" prefWidth="91.0" promptText="Voer tijd in" />
+    <Button fx:id="goToDepositScreenButton" layoutX="15.0" layoutY="350.0" mnemonicParsing="false" onAction="#goToDepositScreen" text="Deponeer tijden -&gt;" />
+    <Button fx:id="closeButton" layoutX="609.0" layoutY="350.0" mnemonicParsing="false" onAction="#closeScreen" text="Sluiten" />
+    <Text fx:id="confirmationText" layoutX="115.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pas als alle velden groen zijn omlijnd, worden de nieuwe waarden opgeslagen!" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="431.0" />
+    <TextField fx:id="nameMedicineTextFieldBin1" layoutX="290.0" layoutY="91.0" prefHeight="25.0" prefWidth="102.0" promptText="Medicijn" />
+    <TextField fx:id="nameMedicineTextFieldBin2" layoutX="290.0" layoutY="151.0" prefHeight="25.0" prefWidth="102.0" promptText="Medicijn" />
+    <TextField fx:id="nameMedicineTextFieldBin3" layoutX="290.0" layoutY="211.0" prefHeight="25.0" prefWidth="102.0" promptText="Medicijn" />
+    <TextField fx:id="nameMedicineTextFieldBin4" layoutX="290.0" layoutY="271.0" prefHeight="25.0" prefWidth="102.0" promptText="Medicijn" />
+    <Text layoutX="290.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naam medicijn:" />
+    <TextField fx:id="amountTextField1" layoutX="493.0" layoutY="91.0" prefHeight="25.0" prefWidth="69.0" promptText="Aantal" />
+    <TextField fx:id="amountTextField2" layoutX="493.0" layoutY="151.0" prefHeight="25.0" prefWidth="69.0" promptText="Aantal" />
+    <TextField fx:id="amountTextField3" layoutX="493.0" layoutY="211.0" prefHeight="25.0" prefWidth="69.0" promptText="Aantal" />
+    <TextField fx:id="amountTextField4" layoutX="493.0" layoutY="271.0" prefHeight="25.0" prefWidth="69.0" promptText="Aantal" />
+    <Text layoutX="493.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aantal:" />
+    <Button layoutX="585.0" layoutY="91.0" mnemonicParsing="false" onAction="#saveIntervalBin1" text="Opslaan bakje 1" />
+    <Button layoutX="585.0" layoutY="151.0" mnemonicParsing="false" onAction="#saveIntervalBin2" text="Opslaan bakje 2" />
+    <Button layoutX="585.0" layoutY="211.0" mnemonicParsing="false" onAction="#saveIntervalBin3" text="Opslaan bakje 3" />
+    <Button layoutX="585.0" layoutY="271.0" mnemonicParsing="false" onAction="#saveIntervalBin4" text="Opslaan bakje 4" />
+</AnchorPane>
